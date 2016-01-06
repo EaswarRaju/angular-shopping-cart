@@ -1,0 +1,47 @@
+<h2 class="coloredText">
+    This is your shopping cart. Here you can edit the items, go back to the store, clear the cart, or check out.
+</h2>
+
+<!-- cart table -->
+<div class="panel panel-default table-responsive">
+    <table class="table table-bordered cartTable">
+
+        <!-- cart table header -->
+        <thead>
+            <tr class="active">
+                <th>Item</th>
+                <th class="text-center">Quantity</th>
+                <th><span class="pull-right">Price</span></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <!-- cart table body -->
+        <tbody>
+            <tr ng-repeat="(item, itemData) in objCartItemsData">
+                <td>{{item}}</td>
+                <td class="text-center">
+                    <span class="item-quantity border-thin">{{itemData.numberOfItems}}</span><span class="incr-item" ng-click="addItem(itemData.item)">+</span><span class="decr-item" ng-click="reduceItem(itemData)">&minus;</span>
+                </td>
+                <td><span class="pull-right">{{itemData.price | currency}}</span></td>
+                <td class="text-center"><span class="glyphicon glyphicon-remove" ng-click="removeItem(item)"></span></td>
+            </tr>
+            <tr ng-if="!cart.cartItems.length">
+               <td class="text-center" colspan="4">No items in cart.</td>
+            </tr>
+        </tbody>
+
+        <!-- cart table footer -->
+        <tfoot>
+            <tr class="active">
+                <td>Total</td>
+                <td class="text-center">{{cart.cartItems.length}}</td>
+                <td><span class="pull-right">{{cart.totalPrice | currency}}</span></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<a href="#itemlist" class="btn btn-default col-md-12"><span class="glyphicon glyphicon-chevron-left"> </span> back to store</a>
+<button type="button" class="btn btn-danger col-md-12" ng-click="clearCart()"><span class="glyphicon glyphicon-trash"> </span> clear cart</button>

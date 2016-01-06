@@ -1,0 +1,68 @@
+[
+  {
+    "itemName" : "Banana",
+    "itemDesc" : "These are rich in Potassium and easy to peel.",
+    "itemPath" : "images/ban.jpg",
+    "itemPrice" : 4
+  },
+  {
+    "itemName" : "Grapefruit",
+    "itemDesc" : "Pink or red, always healthy and delicious.",
+    "itemPath" : "images/grf.jpg",
+    "itemPrice" : 11
+  },
+  {
+    "itemName" : "Apple",
+    "itemDesc" : "Eat one every day to keep the doctor away!",
+    "itemPath" : "images/apl.jpg",
+    "itemPrice" : 11
+  },
+  {
+    "itemName" : "Kiwi",
+    "itemDesc" : "These come from New Zealand.",
+    "itemPath" : "images/kiw.jpg",
+    "itemPrice" : 14
+  },
+  {
+    "itemName" : "Fig",
+    "itemDesc" : "OK, not that nutritious, but sooo good!",
+    "itemPath" : "images/fig.jpg",
+    "itemPrice" : 10
+  },
+  {
+    "itemName" : "Cantaloupe",
+    "itemDesc" : "Delicious and refreshing.",
+    "itemPath" : "images/ctp.jpg",
+    "itemPrice" : 3
+  },
+  {
+    "itemName" : "Avocado",
+    "itemDesc" : "Guacamole anyone?",
+    "itemPath" : "images/avc.jpg",
+    "itemPrice" : 16
+  },
+  {
+    "itemName" : "Grape",
+    "itemDesc" : "Wine is great, but grapes are even better.",
+    "itemPath" : "images/grp.jpg",
+    "itemPrice" : 8
+  },
+  {
+    "itemName" : "Guava",
+    "itemDesc" : "Exotic, fragrant, tasty!",
+    "itemPath" : "images/gua.jpg",
+    "itemPrice" : 8
+  },
+  {
+    "itemName" : "Mango",
+    "itemDesc" : "King of fruits",
+    "itemPath" : "images/man.jpg",
+    "itemPrice" : 8
+  },
+  {
+    "itemName" : "Lychee",
+    "itemDesc" : "Unusual and highly addictive!",
+    "itemPath" : "images/lyc.jpg",
+    "itemPrice" : 18
+  }
+]

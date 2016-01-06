@@ -1,0 +1,54 @@
+<!--search box-->
+<form action="#" method="post">
+    <div class="form-group">
+        <label for="searchbox"> Search: </label>
+        <input type="text" id="searchbox" ng-model="searchCart.itemName">
+    </div>
+</form>
+
+
+<!--table for item list-->
+<div class="table-responsive">
+    <table class="table table-bordered">
+
+        <!-- header for total items and total price -->
+        <thead>
+            <tr>
+                <th colspan="4" class="coloredText">
+                    <div class="pull-right">
+                        <a href="#cart" class="glyphicon glyphicon-shopping-cart"></a>
+                        <span>{{cart.cartItems.length}}</span> <span class="itemtext"> items, </span>
+                        <span>{{cart.totalPrice | currency}}</span>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+
+        <!-- table body for items -->
+        <tbody>
+            <tr ng-repeat="item in filteredItems = (cart.itemList | orderBy:'itemName' | filter:searchCart:strict)">
+                <td class="text-center">
+                    <img ng-src="{{item.itemPath}}"/>
+                </td>
+                <td>
+                    <div class="coloredText"><strong>{{item.itemName}}</strong></div>
+                    <span class="itemdesc"> {{item.itemDesc}} </span>
+                </td>
+                <td>
+                    <span class="price pull-right"> {{item.itemPrice | currency}} </span>
+                </td>
+                <td class="text-center">
+                    <a href="javascript:void(0)" class="addtocart" ng-click="addToCart(item)">add to cart</a>
+                </td>
+            </tr>
+
+            <!-- fall back for no items -->
+            <tr ng-if="!filteredItems.length">
+                <td colspan="4">
+                    No items matching your request.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

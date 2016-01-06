@@ -1,0 +1,62 @@
+tfoot {
+	font-weight: bold;
+}
+
+.form-group {
+	margin-top: 10px;
+}
+
+.border-thin {
+	border: 1px solid #828282;
+}
+
+.item-quantity {
+	padding: 8px 50px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.incr-item, .decr-item {
+	padding: 8px 12px;
+	color: white;
+	cursor: pointer;
+}
+
+.incr-item {
+	background-color: #398439;
+	border: 1px solid #225522;
+}
+
+.decr-item {
+	background-color: #5e5e5e;
+	border: 1px solid #3d3d3d;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.coloredText {
+	color: #00bfff;
+}
+
+.itemtext {
+	font-weight:normal;
+}
+
+a.glyphicon-shopping-cart {
+	text-decoration: none;
+	font-size: larger;
+}
+
+.cartTable tbody tr td {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.cartTable thead tr th, .cartTable tfoot tr td{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.btn-danger {
+	margin-top: 10px;
+}
